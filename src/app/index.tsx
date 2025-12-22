@@ -1,10 +1,10 @@
 import { StatusBar, View } from "react-native";
+import { router } from "expo-router";
 
 import { List } from "@/components/List";
 import { Target } from "@/components/Target";
-import { HomeHeader } from "@/components/HomeHeader";
 import { Button } from "@/components/Button";
-import { router } from "expo-router";
+import { HomeHeader } from "@/components/HomeHeader";
 
 const summary = {
   total: "R$ 2.680,00",
@@ -15,14 +15,14 @@ const summary = {
 const targets = [
   {
     id: "1",
-    name: "Apple Watch",
+    name: "Samsung Watch",
     current: "580,00",
     percentage: "50%",
     target: "1.790,00",
   },
   {
     id: "2",
-    name: "Copmpar cadeira ergonomica",
+    name: "Comprar cadeira ergonomica",
     current: "900,00",
     percentage: "75%",
     target: "1.200,00",
