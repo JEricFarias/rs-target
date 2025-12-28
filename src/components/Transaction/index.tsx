@@ -38,7 +38,7 @@ export function Transaction({ data, onRemove }: Props) {
       <View style={styles.info}>
         <Text style={styles.value}>{data.value}</Text>
         <Text style={styles.description} numberOfLines={1}>
-          {data.date} {data.description ?? `• ${data.description}`}
+          {data.date} {data.description && `• ${data.description}`}
         </Text>
       </View>
 
